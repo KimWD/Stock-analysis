@@ -13,7 +13,7 @@ To determine if refactoring our code loop through the stock data will make it ru
 ![VBA_Challenge_2017](Resources/VBA_Challenge_2017.png)
 ![VBA_Challenge_2018](Resources/VBA_Challenge_2018.png)
 
-#Refactored Code
+**Refactored VBA Code for the analysis.**
 
 **1. Create a ticker Index, set to 0**
         
@@ -70,6 +70,8 @@ To determine if refactoring our code loop through the stock data will make it ru
                         .Value = .Value
             End With
 
+**In conclusion, the code is much more organized and easier to read.  However, it appears that the run times of the restructured scripts are still the same as the original scripts.**
+
 # Summary:
 **1. What are the advantages or disadvantages of refactoring code?**
 
@@ -85,5 +87,5 @@ To determine if refactoring our code loop through the stock data will make it ru
 
 **2.  How do these pros and cons apply to refactoring the original VBA script?**
 
-When refactoring the orginal VBA script, it took almost twice as long as it did it did to write the codes originally.  However, once all codes were cleaned up, errors were easier to spot and correct.  The functionality remained the same, however, the code had fewer steps, there by using less memory and improve understanding for future analysis to use. 
+When refactoring the orginal VBA script, it took almost twice as long as it did to write the codes originally.  However, once all codes were cleaned up, errors were easier to spot and correct.  The functionality remained the same, however, the code had fewer steps, there by using less memory and improve understanding for future analysis to use. 
 
