@@ -7,21 +7,25 @@ Refactoring our stock analysis code to run through all stocks in our dataset.
 To determine if refactoring our code loop through the stock data will make it run faster. In addition, what advantage & disadvantages may happen through refactoring the code. 
 
 # **Results**
+
 **Graphics for Run Times on the Refactored VBA code**
 
 ![VBA_Challenge_2017](Resources/VBA_Challenge_2017.png)
 ![VBA_Challenge_2018](Resources/VBA_Challenge_2018.png)
-1. Create a ticker Index, set to 0
+
+#Refactored Code
+
+**1. Create a ticker Index, set to 0**
         
         For i = 0 To 11
         tickerIndex = tickers(i)
 
-2. Array created for tickers, tickerVolumes, tickerStartingPrices, and tickerEndingPrices
+**2. Array created for tickers, tickerVolumes, tickerStartingPrices, and tickerEndingPrices**
     
     Dim tickerVolumes As Long
     Dim tickerStartingPrices As Single, tickerEndingPrices As Single
        
-3. The tickerIndex is used to access the stock ticker index for the tickers, tickerVolumes, tickerStartingPrices, and tickerEndingPrices arrays
+**3. The tickerIndex is used to access the stock ticker index for the tickers, tickerVolumes, tickerStartingPrices, and tickerEndingPrices arrays**
     
        Worksheets(yearValue).Activate
        tickerVolumes = 0
@@ -36,7 +40,7 @@ To determine if refactoring our code loop through the stock data will make it ru
       
            End If
            
-4.The script loops through stock data, reading and storing all of the following values from each row:'tickers, tickerVolumes, tickerStartingPrices, and tickerEndingPrices
+**4.The script loops through stock data, reading and storing all of the following values from each row:'tickers, tickerVolumes, tickerStartingPrices, and tickerEndingPrices**
         
            If Cells(j - 1, 1).Value <> tickerIndex And Cells(j, 1).Value = tickerIndex Then
 
@@ -52,7 +56,7 @@ To determine if refactoring our code loop through the stock data will make it ru
            End If
        Next j
         
-5. Code for formatting the cells in the spreadsheet is working.
+**5. Code for formatting the cells in the spreadsheet is working.**
 
            Worksheets("All Stocks Analysis").Activate
            
