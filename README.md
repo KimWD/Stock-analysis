@@ -6,6 +6,9 @@
 
 ## Results
 ### 
+![2017_&_2018_Code_run_time_from_Activity](Resources/2017_&_2018_Code_run_time_from_Activity.png)
+![VBA_Challenge_2017](Resources/VBA_Challenge_2017.png)
+![VBA_Challenge_2018](Resources/VBA_Challenge_2018.png)
 
 
 ## Summary
